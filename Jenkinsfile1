@@ -7,7 +7,7 @@ pipeline {
                  git 'https://github.com/AjayGitHub9550/First-repo.git'
               }
             }
-            sshagent(credentials: ['Ajaylast']){
+            sshagent(credentials: ['Billa']){
                   steps{
                        sh "mvn clean package"
                        sh "mv target/*.war target/FirstProject.war"
