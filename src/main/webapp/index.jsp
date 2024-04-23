@@ -55,7 +55,7 @@
     </style>
 </head>
 <body>
-    <h1>This is Ajay Changes from Git -practice </h1>
+    <h1>This is Ajay Changes from Git -practice2 </h1>
     <h2>Menu</h2>
 
     <div id="menu">
