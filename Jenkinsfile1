@@ -1,4 +1,4 @@
-pipeline {
+pipeline{ 
       agent any
       
       stages{
@@ -7,14 +7,14 @@ pipeline {
                  git 'https://github.com/AjayGitHub9550/First-repo.git'
               }
             }
-            sshagent(['tomcatsecrt']){
+           stage("Build") {
                   steps{
                        sh "mvn clean package"
                        sh "mv target/*.war target/First-repo.war"
                       }
                        
             }
-             stage("depoly"){
+             stage("Depoly"){
                   steps{
                      
                        
@@ -28,7 +28,7 @@ pipeline {
                             
                           """
     
-}
+                                             }
                       
                        }
             }
