@@ -21,7 +21,7 @@ pipeline{
                        sshagent(credentials: ['tomcat1']) {
                        
                        sh """
-                            scp -o StrictHostKeyChecking=no  target/FirstProject.war ubuntu@54.165.21.46:/home/ubuntu/apache-tomcat-9.0.87/webapps/
+                            scp -o StrictHostKeyChecking=no  target/First-repo.war ubuntu@54.165.21.46:/home/ubuntu/apache-tomcat-9.0.87/webapps/
                             
                             ssh ubuntu@54.165.21.46 /home/ubuntu/apache-tomcat-9.0.87/bin/shutdown.sh
                             ssh ubuntu@54.165.21.46 /home/ubuntu/apache-tomcat-9.0.87/bin/startup.sh
