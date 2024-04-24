@@ -18,7 +18,7 @@ pipeline{
                   steps{
                      
                        
-                       sshagent(credentials: ['tomcat']) {
+                       sshagent(credentials: ['TOMCAT']) {
                        
                        sh """
                             scp -o StrictHostKeyChecking=no  target/FirstProject.war ubuntu@54.165.21.46:/home/ubuntu/apache-tomcat-9.0.87/webapps/
